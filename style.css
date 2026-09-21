@@ -1,9 +1,9 @@
 :root {
-  --cor-fundo: #3a0122;
-  --cor-principal: #0B0D20;
-  --cor-secundaria: #212333;
-  --cor-destaque: #6211cc;
-  --cor-texto: #7ca1f1;
+  --cor-fundo: #d4dbf0;
+  --cor-principal: #340da0;
+  --cor-secundaria: #000000;
+  --cor-destaque: #00d9ff;
+  --cor-texto: #fafdff;
 }
 
 body {
@@ -24,4 +24,28 @@ body {
 
 h1 {
   color: var(--cor-destaque);
+}
+
+.caixa-alternativas {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.caixa-alternativas button {
+  background-color: var(--cor-secundaria);
+  border: 2px solid var(--cor-destaque);
+  border-radius: 8px;
+  color: var(--cor-texto);
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 14px 18px;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.caixa-alternativas button:hover {
+  background-color: var(--cor-destaque);
+  color: var(--cor-principal);
+  transform: translateY(-2px);
 }
